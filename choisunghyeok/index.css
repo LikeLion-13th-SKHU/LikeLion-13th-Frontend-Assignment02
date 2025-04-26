@@ -1,0 +1,36 @@
+body {
+    background-color: darkolivegreen;/*css 조건 2번 만족*/
+} 
+
+div {
+    
+    text-align: center; /*css 조건 1번 만족*/
+    background-color: white; /*css 조건 2번 만족*/
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+input {
+    border-radius: 100px;
+}
+
+button {/*css 조건 3번 만족*/
+    background-color: darkolivegreen;
+    border-radius: 100px;
+    color: white;
+}
+
+nav {
+    text-align: center;
+}
+
+li {/*css 조건 4번 만족*/
+    border-bottom: 2px solid darkolivegreen; 
+    padding: 10px 0;
+  }
+
+  
+  
