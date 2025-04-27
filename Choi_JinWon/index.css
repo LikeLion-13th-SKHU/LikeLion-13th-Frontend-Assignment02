@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(181, 214, 146);/*css 2번 조건*/
+    width: 100%;
+    font-family: 'SBAggroB';
+}
+
+div {
+    margin: 40px auto; /*css 1번 조건*/
+    background-color: white;
+    width: 60%;
+    height: 800px;
+    border-radius: 30px;
+    overflow: scroll;
+}
+
+input[type=text] {
+    width: 65%;
+    padding: 20px;
+    margin: 30px 20px 30px 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button { /*css 3번 조건*/
+    background-color: rgb(181, 214, 146);
+    border: 1px solid rgb(181, 214, 146);
+    border-radius: 5px;
+    padding: 20px;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(176, 233, 114);
+    color: black;
+}
+
+ul {
+    padding-right: 40px;
+}
+
+.adding { /*css 4번 조건*/
+    font-size: 25px;
+    color: black;
+    list-style-type: none;
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+
+.checkBoxStyle {
+    width: 20px;
+    height: 20px;
+    accent-color: #32a536;
+    transform: scale(1.2);
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
