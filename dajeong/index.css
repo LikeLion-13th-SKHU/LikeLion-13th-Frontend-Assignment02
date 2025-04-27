@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(137, 160, 169);
+}
+
+#wrapper {
+    margin: 20px auto; /*css 1번 조건*/
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: white; /*css 2번 조건*/
+}
+
+input {
+    box-sizing: border-box;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ddd;
+}
+
+button {
+    box-sizing: border-box;
+    width: 25%;
+    height: 40px;
+    background-color: rgb(137, 160, 169); /*css 3번 조건*/
+    border: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    border-top: 1px solid #ddd; /*css 4번 조건*/
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+}
