@@ -1,0 +1,56 @@
+body {
+  background-color: rgba(124, 209, 240, 0.767); /* css 2번 조건 */
+  height: 100vh; /* 화면 전체 높이 */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* css 1번 조건 */
+  align-items: center;
+}
+
+#container {
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  min-height: 400px;
+  padding: 30px 20px;
+}
+
+#addTodo {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+#todoInput {
+  width: 80%;
+  outline: none;
+}
+
+/*css 3번 조건*/
+#skybutton {
+  width: 20%;
+  height: 30px;
+  background-color: rgba(124, 209, 240, 0.767);
+  color: white;
+  border-style: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 5px 5px;
+  border-top: 1px solid #ccc; /* css 4번 조건 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
