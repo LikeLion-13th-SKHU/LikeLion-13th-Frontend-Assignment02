@@ -1,3 +1,5 @@
+
+/*n1. n의 개수만큼 피라미드 층을 만들어 출력해라 */
 function solution(n) {
     for(let i=1;i<=n;i++){
         let spaces=' '.repeat(n - i);
@@ -5,4 +7,5 @@ function solution(n) {
         console.log(spaces + stars);
     }
 }
-console.log();
+solution(3);
+solution(5);
