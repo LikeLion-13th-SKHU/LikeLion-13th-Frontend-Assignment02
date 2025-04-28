@@ -8,6 +8,8 @@ body {
     justify-content: center; /* 수평 중앙 정렬 */    /*1. todo리스트가 화면 중앙에 위치 -> 전체 body에서 수평, 수직을 중앙 정렬함*/
     align-items: center; /* 수직 중앙 정렬 */
     height: 100vh; /* 전체 화면 높이 */
+
+    flex-direction: column;
 }
 
 .container {
