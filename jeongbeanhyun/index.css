@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "GowunBatang-Regular";
+    background-color: blueviolet;
+    font-size: 20px;
+}
+
+.todo{
+    background-color: white; /* css 조건 2번 */
+    text-align: center; /* css 조건 1번 */
+    width:400x;
+    height:700px;
+    margin: 50px 100px 0px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#todoInput {
+    width: 70%;
+    margin: 10px 0;
+    padding: 15px 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgray; /* css 조건 4번 */
+    padding: 12px 0;
+
+}
+
+button{ /* css 조건 3번 */
+    background-color: blueviolet;
+    padding: 15px 30px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: yellow;
+}
+  
+#todoList{
+    list-style: none;
+    text-align: left;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+#todoList:hover{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+span::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + span::before{
+    background-image: url('image/체크아이콘.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a{
+    display: block;
+    text-align: center;
+    color: rgb(255, 196, 0);
+}
