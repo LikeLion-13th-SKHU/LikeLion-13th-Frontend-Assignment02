@@ -38,3 +38,4 @@ function solution(a, b) {
         console.log("Mul: " + mul);
         console.log("Div: " + div);
     }
+    solution(1,2);

@@ -14,3 +14,16 @@ function solution(n) {
         return "F";   //그 이외에 점수는 F
     }
 }
+
+solution(13);
+solution(24);
+solution(48);
+solution(62);
+solution(73);
+solution(33);
+solution(83);
+solution(93);
+solution(70);
+solution(80);
+solution(90);
+solution(100);
