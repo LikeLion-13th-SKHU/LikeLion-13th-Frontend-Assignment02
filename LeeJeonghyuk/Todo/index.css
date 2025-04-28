@@ -1,0 +1,97 @@
+body {
+    /* CSS 2번 조건*/
+    background-color:rgb(116, 173, 249);
+    /* CSS 1번 조건*/
+    display: block;
+    justify-items: center;
+}
+
+#todoBody {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    /* CSS 2번 조건*/
+    background-color: white;
+    border-radius: 30px;
+}
+
+#todoHead {
+    display: inline-flex;
+    margin: 10px 10px;
+    border: 3px solid #1864ab;
+}
+
+#todoHead:focus-within {
+    box-shadow: 0 0 3px gray;
+}
+
+#todoInput {
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 30px;
+}
+
+/* CSS 3번 조건*/
+#addButton {
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-left: 3px solid #1864ab;
+    background-color: #1864ab;
+    color: white;
+}
+
+/* CSS 4번 조건*/
+#todoList li {
+    list-style: none;
+    border-top: 3px solid rgb(136, 208, 28);
+    margin-left: -40px;
+    padding: 10px;
+    font-size: large;
+    position: relative;
+}
+
+#todoList input {
+    margin: 20px;
+}
+
+[type="checkbox"] {
+    width: 30px;
+    height: 15px;
+    accent-color: yellowgreen;
+}
+
+#battery {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.todoLists:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 1s;
+    background-color: rgb(136, 208, 28);
+    user-select: none;
+    pointer-events: none;
+}
+
+.todoLists:active::after {
+    width: 100%;
+}
+
+#jsQuiz {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#jsQuiz:visited {
+    background-color: whitesmoke;
+    color: black;
+}
