@@ -1,0 +1,26 @@
+body{
+    background-color: skyblue;
+    /*css 1번조건*/
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    flex-direction: column;
+}
+.container {
+    max-width: 600px;
+    background: white; /*css 2번 조건*/
+    padding: 20px;
+    border-radius: 8px;
+}
+li {  /*css 4번 조건*/
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+    display: flex;
+    justify-content: flex-start; 
+}
+button{ /*css 3번 조건*/
+    background-color: skyblue;
+
+}
