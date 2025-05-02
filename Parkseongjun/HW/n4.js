@@ -23,6 +23,6 @@ function solution(a, b) {
     };
   }
   
-  const result = solution(10, 2);
+  const result = solution(1, 2);
   console.log(result);
   

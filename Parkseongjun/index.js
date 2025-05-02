@@ -9,6 +9,22 @@ function addTodo() {
         renderTodos();
     }
 }
+// js 2번 조건 만족 수정(체크박스용 함수)
+function newCheckbox(span) {
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "todo-checkbox";
+
+    checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+            span.classList.add("completed");
+        } else {
+            span.classList.remove("completed");
+        }
+    });
+
+    return checkbox;
+}
 
 function renderTodos() {
     const list = document.getElementById("todoList");
@@ -19,22 +35,12 @@ function renderTodos() {
 
         const label = document.createElement("label");
         label.className = "custom-checkbox";
-        // js 2번 조건 만족 (체크박스 만들기)
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.className = "todo-checkbox";
 
         const span = document.createElement("span");
         span.textContent = todo;
         span.className = "todo-text";
-        // js 2번 조건 만족 (체크 시 실선생김)
-        checkbox.addEventListener("change", function () {
-            if (checkbox.checked) {
-                span.classList.add("completed");
-            } else {
-                span.classList.remove("completed");
-            }
-        });
+
+        const checkbox = newCheckbox(span);
 
         label.appendChild(checkbox);
         label.appendChild(span);
