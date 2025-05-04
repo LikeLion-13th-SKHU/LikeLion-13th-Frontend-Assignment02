@@ -1,0 +1,55 @@
+body {
+    background-color: #4B0082; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+  }
+  
+  .input-group {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #todoInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  #addBtn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  #todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #todoList li {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #eee; 
+  }
+  
+  input[type=\"checkbox\"] {
+    width: 18px;
+    height: 18px;
+    accent-color: green; 
+  }
